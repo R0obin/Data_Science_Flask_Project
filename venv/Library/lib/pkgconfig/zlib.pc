@@ -1,0 +1,13 @@
+prefix=E:/Flask/venv/Library
+exec_prefix=E:/Flask/venv/Library
+libdir=E:/Flask/venv/Library/lib
+sharedlibdir=E:/Flask/venv/Library/lib
+includedir=E:/Flask/venv/Library/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
