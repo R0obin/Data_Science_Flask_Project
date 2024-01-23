@@ -41,8 +41,4 @@ If you're interested in contributing to this project, feel free to fork the repo
 
 Encountered any issues or have feedback? Please don't hesitate to open an issue on this repository. Your insights help improve the project.
 
-### License:
-
-This project is licensed under the [MIT License](LICENSE).
-
 Thank you for exploring this Flask project! Happy coding!
