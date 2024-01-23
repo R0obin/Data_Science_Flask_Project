@@ -1,26 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subject Scores Form</title>
 </head>
+
 <body>
+ <div class="calculate">
+	<h1>Calculate average marks</h1>
 
-    <h1>Subject Scores Form</h1>
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('form')}}" method="post">
+    	<input type="text" name="maths" placeholder="Maths" required="required" />
+        <input type="text" name="science" placeholder="Science" required="required" />
+		<input type="text" name="history" placeholder="history" required="required" />
 
-    <form action="/form" method="POST">
-        <label for="maths">Math:</label>
-        <input type="number" name="maths" placeholder="Enter math score" required><br>
-
-        <label for="science">Science:</label>
-        <input type="number" name="science" placeholder="Enter science score" required><br>
-
-        <label for="history">History:</label>
-        <input type="number" name="history" placeholder="Enter history score" required><br>
-
-        <button type="submit">Submit</button>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Calculate Button</button>
     </form>
+
+   <br>
+   <br>
+ </div>
+
 
 </body>
 </html>
