@@ -28,10 +28,10 @@ def  form():
 
 @app.route('/api',methods=["POST"])
 def  calculate():
-    data = request.get_json()
+    data = request.test.json()
     a_val = float(dict(data)['a'])
     b_val = float(dict(data)['b'])
-    return jsonify(a_val - b_val)
+    return jsonify(a_val + b_val)
 
 
 
